@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="img/favicon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <title>Index</title>
+  <!-- Modal inicio sesion -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Bienvenido a GymHome Fitness</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Correo</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie
+                más.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Recordar datos</label>
+              <button type="button" class="btn btn-link">¿Olvidaste tu contraseña?</button>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Aceptar</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Bienvenido a GymHome Fitness</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Para poder reservar una hora debes estar registrado, favor registrate o inicia sesion
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal2">
+            Iniciar Sesion
+          </button>
+          <a href="formulario_colaborador.html" class="btn btn-warning">Registrate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</head>
+
+<body class="fondo-blur">
+  <header>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">GymHome Fitness</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre_nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="clases.html">Clases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="programa_ejercicio.html">Programas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="testimonios.html">Testimonios</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+              data-toggle="dropdown" aria-expanded="false">
+              Contactenos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="formulario.html">Registro Colaboradores</a></li>
+              <li><a class="dropdown-item" href="formulario.html">Registro Alumnos</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Reclamos/Sugerencias</a></li>
+              <li><a class="dropdown-item" href="mesaayuda.html">Mesa de Ayuda</a></li>
+            </ul>
+          </li>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-info mr-sm-2" data-toggle="modal" data-target="#exampleModal">
+            AGENDA TU HORA
+          </button>
+          <button type="button" class= "btn btn-info"  data-toggle="modal" data-target="#exampleModal2">
+            INICIAR SESION
+          </button>
+
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+<main>
+    <div class="recla">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form class="form-horizontal" method="post">
+                        <fieldset>
+                          <div>
+                            <legend class="text-center header" style="color:rgb(47,213,187);" >Enviar Mensaje a Mesa de ayuda</legend>
+                          </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1" style="color:rgb(47,213,187);">Nombre completo</label>
+                              <input class="form-control" type="text" placeholder="Ej. Juanito Perez">
+                              </select>
+                                </div>
+                            </div>
+                            <label for="exampleFormControlSelect1" style="color:rgb(47,213,187);">Nivel</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>bajo</option>
+                              <option>medio</option>
+                              <option>urgente</option>
+                              
+                            </select>
+    
+                            <div class="form-group">
+                              <label for="exampleFormControlInput1" style="color:rgb(47,213,187);">Correo Electronico</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="juanitoelpotro@hotmail.com">
+                            </div>
+                            <div class="form-group"> <!-- State Button -->
+                                
+                                </select>     
+    
+                            <div class="form-group">
+                              <label for="exampleFormControlInput1" style="color:rgb(47,213,187);">Celular</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+569"
+                            </div>
+    
+                            <div class="form-group">
+                              <label for="exampleFormControlTextarea1" style="color:rgb(47,213,187);">Describe tu caso</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-info">Enviar</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</main>
+
+</body>
+
+</html>
