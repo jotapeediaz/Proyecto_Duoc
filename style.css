@@ -1,3 +1,19 @@
+
+.recla {
+    background-image:  url("img/fondo-formulario.jpg");
+    background-position: center;
+    height: 700px;
+    width: 650px;
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+    margin-left: 30%;
+    margin-top:3%;
+    border-radius: 19%;
+    border-style: ridge;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
 .asd{
     background-image:  url("img/fotter.jpg");
     color: aliceblue; 
@@ -168,6 +184,3 @@
    
   }
   
-
-
- 
